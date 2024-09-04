@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b127f1c0f9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left" onclick="backwardSong()"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <img
+          src="media/jordon-conner-tIr-PWgSYB4-unsplash.jpg"
+          class="song-img"
+          alt="Song Image"
+        />
+        <h1>Pehle Bhi Main</h1>
+        <p>Raj Shekhar and Vishal Mishra</p>
+
+        <audio controls id="song">
+          <source
+            src="media/Pehle Bhi Main Animal 128 Kbps.mp3"
+            type="audio/mpeg"
+          />
+        </audio>
+        <input type="range" value="0" id="progress" aria-label="Progress Bar" />
+
+        <div class="controls">
+          <div>
+            <i class="fa-solid fa-backward" onclick="backwardSong()"></i>
+          </div>
+          <div onclick="playPause()">
+            <i class="fa-solid fa-play" id="ctrlicon"></i>
+          </div>
+          <div><i class="fa-solid fa-forward" onclick="forwardSong()"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <script defer src="./script.js"></script>
+  </body>
+</html>
