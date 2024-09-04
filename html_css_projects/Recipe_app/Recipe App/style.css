@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: #6b3b0c;
+    background-color: #D2B48C;
+    background-color: powderblue;
+}
+
+.images{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    padding : 20px;
+   
+}
+
+header nav{
+    background-color: #212121;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 1;
+}
+header nav h1{
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+header nav form{
+    display: flex;
+    justify-content: center;
+}
+form input[type="text"]{
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+form input[type="text"],button[type="submit"]{
+    border: none;
+    font-size: 18px;
+    padding: 10px; /* padding increases size of search box and search box */
+    border-radius: 50px;
+}
+
+form button[type="submit"]{
+    background-color: #f44336;
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+    transition :background-color 0.2s
+    ease-in-out; /* This property is used to set time for hover effect*/
+
+}
+
+form button[type="submit"]:hover, .recipe button:hover,
+.recipe-close-btn:hover {
+  background-color: #ff5c5c;
+}
+
+/* Main Section */
+.recipe-container{
+    text-align: center;
+    margin-top: 20px;
+    display : grid;    /* To show as cards */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
+    grid-gap : 40px;
+    width : 80%;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.recipe{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgb(78, 73, 73, 0.1), -5px -5px 10px rgb(34, 34, 34, 0.5);
+    cursor: pointer;
+    max-width: 350px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.recipe:hover{
+    transform: scale(1.1);
+}
+
+.recipe img{
+  height: 200px;
+ 
+}
+
+.recipe h3{
+    font-size: 24px;
+    margin-block: 5px;
+}
+
+.recipe p{
+    font-size: 20px;
+    color: #4a4a4a;
+    margin: 5px 0;
+}
+
+.recipe span{
+    font-weight: 600;
+}
+
+.recipe button{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 10px auto;
+    background-color: #f44336;
+    color: #fff;
+}
+
+/* Recipe Details */
+.recipe-details {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%); /*It is used for chrome , opera, safari*/
+    background-color: #694c2f;
+    background-color: rgb(203, 203, 95);
+    border-radius: 12px;
+    width: 40%;
+    height: 60%;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+    overflow-y: scroll;
+}   
+
+  /* Adding Scrollbar to recipe detail popup */
+
+  .recipe-details::-webkit-scrollbar{      /* To Make Scrollbar*/
+     width: 10px;
+  }
+
+   .recipe-details::-webkit-scrollbar-thumb{     /* To set Background */
+       background: #b5b5ba;
+       border-radius: 16px;
+       --webkit-border-radius: 16px;
+  }
+
+  body::-webkit-scrollbar{     
+    width: 10px;
+ }
+
+  body::-webkit-scrollbar-thumb{     /* To set Background */
+      background: #a1a1a1;
+    
+ }
+
+  body::-webkit-scrollbar-track{
+    background: #ebebeb;
+  }
+
+  .recipe-details-content{
+     padding: 30px;
+  }
+
+  .recipeName{
+     text-align: center;
+     text-transform: uppercase;
+     text-decoration: underline;
+     
+  }
+
+  .indregientList{
+     margin-bottom: 10px;
+     margin-left: -20px;
+  }
+
+  .recipeInstructions p{
+     line-height: 30px;
+     white-space: pre-line;
+  }
+
+  .recipeName,
+  .indregientList,
+  .recipeInstructions{
+    margin-bottom: 10px;
+  }
+
+  .recipe-close-btn{
+    border: none;
+    font-size: 18px;
+    padding: 8px; /* padding increases size of search box and search box */
+    border-radius: 50px;
+    background-color: #f44336;
+    color: #fff;
+    position: absolute;
+    top:20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* About us */
+
+  .about-msg {
+    text-align: center;
+    margin: 80px 0; /* text-height from bottom of the Page*/
+    color: #333;
+    font-size: 16;
+    font-weight: 400;
+  }
+  .about-msg h2 {
+    font-size: 28px;
+    margin-bottom: 30px; /* text-height from paragraph*/
+    font-weight: 600;
+  }
+
+  /* footer */
+
+  .footer {
+    margin: 80px 0 10px;
+    text-align: center;
+  }
+  .footer a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    margin: 0 10px;
+  }
+  .footer hr {
+    background: black;
+    height: 1px;
+    width: 100px;
+    border: 0;
+    margin: 20px 0;
+  }
+  .footer p {
+    padding: 15px;
+  }
+  .active {
+    position: relative;
+  }
+  .active::after {
+    content: "";
+    background: #fff;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -12px;
+    border-radius: 2px;
+  }
+  
+  nav .fa-bars {
+    display: none;
+  }
+  
+  .row3{
+    padding: 0.5rem;
+  }
+
+/* Responsive Code */
+@media screen and 
+(max-width:600px){
+      header nav{
+        flex-direction: column;  /*If we apply flex-direction : column then website name will apperar upside of search box */
+        /* If we apply flex-direction : column-reverse then search box appear upside of the website name */
+      }
+
+    header nav form{
+        width: 80%;
+        margin-top: 20px;
+    }
+}
+
+
+    

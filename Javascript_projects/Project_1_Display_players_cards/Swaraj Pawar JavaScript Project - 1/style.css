@@ -1,0 +1,93 @@
+body {
+  background-color: #323031;
+  font-family: "Ubuntu", sans-serif;
+  padding: 3em;
+  color: white;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+
+  gap: 2em;
+  align-items: center;
+  align-content: center;
+  margin-top: 18px;
+}
+
+.items {
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: rgb(83, 161, 175);
+  width: fit-content;
+  border-radius: 18px;
+  width: 220px;
+  height: 350px;
+  padding-top: 1em;
+  vertical-align: baseline;
+  background-image: url("https://www.svgrepo.com/show/525901/football.svg");
+  background-size: cover;
+  background-blend-mode: soft-light;
+}
+
+.btn {
+  background-color: rebeccapurple;
+  padding: 12px;
+  width: 15em;
+  color: white;
+  border: 0;
+  border-radius: 18px;
+  font-size: large;
+}
+
+.btn:hover {
+  background-color: blueviolet;
+  cursor: pointer;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.c {
+  text-align: end;
+}
+
+.items:hover {
+  transform: rotate(10deg);
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(83, 161, 175);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.heading {
+  background-color: rgb(47, 72, 107);
+  padding: 12px;
+  border-radius: 18px;
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
