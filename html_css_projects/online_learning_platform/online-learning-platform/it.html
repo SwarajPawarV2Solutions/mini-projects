@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAGE</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link href="./index.css" rel="stylesheet" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="px-16">
+      <!--navbar-->
+
+      <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div
+          class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4"
+        >
+          <a
+            href="/index.html"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="Images/Logo.png"
+              class="logo"
+              alt="Flowbite Logo"
+            />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >TechSpark</span
+            >
+          </a>
+
+          <div class="max-w-screen-xl px-4 py-3 mx-auto">
+            <div class="flex items-center">
+              <ul
+                class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm"
+              >
+                <li>
+                  <a
+                    href="/index.html"
+                    class="text-gray-900 dark:text-white hover:underline"
+                    aria-current="page"
+                    >Home</a
+                  >
+                </li>
+               
+                <li>
+                  <a
+                    id="dropdownDividerButton"
+                    data-dropdown-toggle="dropdownDivider"
+                    class="text-black bg-transparent focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm text-center inline-flex items-center bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    type="button"
+                  >
+                    Courses
+                    <svg
+                      class="w-3 h-3 ms-3"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
+                  </a>
+
+                  <!-- Dropdown menu -->
+                  <div
+                    id="dropdownDivider"
+                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                  >
+                    <ul
+                      class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                      aria-labelledby="dropdownDividerButton"
+                    ></ul>
+                    <div class="py-2">
+                      <a
+                        href="/index.html#it"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100 dark:text-gray-200 dark:hover:text-white"
+                        >Information Technology</a
+                      >
+                    </div>
+                    <div class="py-2">
+                      <a
+                        href="/index.html#mech"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                        >Mechanical</a
+                      >
+                    </div>
+                    <div class="py-2">
+                      <a
+                        href="/index.html#mba"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                        >MBA</a
+                      >
+                    </div>
+
+                    <div class="py-2">
+                      <a
+                        href="/index.html#chemical"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                        >Chemical</a
+                      >
+                    </div>
+                    <div class="py-2">
+                      <a
+                        href="/index.html#civil"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                        >Civil</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <a
+                    href="/index.html#about"
+                    class="text-gray-900 dark:text-white hover:underline"
+                    >About us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex items-center space-x-6 rtl:space-x-reverse">
+
+            <img
+            src="Images/Phone logo-modified.png"
+            class="phn_logo"
+            loading="eager"
+          />
+            <a
+              href=""
+              class="text-sm text-gray-500 dark:text-white hover:underline"
+              >(+91) 9483123489</a
+            >
+           
+          </div>
+        </div>
+      </nav>
+      <nav class="bg-gray-50 dark:bg-gray-700"></nav>
+
+      <!---->
+
+      <!--Heading-->
+
+      <!---->
+
+      <!--IT-->
+
+      <div class="w-screen" id="it" style="padding: 4em">
+        <h1
+          class="mb-8 text-3xl font-extrabold text-gray-700 dark:text-white md:text-5xl lg:text-3xl"
+        >
+          <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-yellow-200"
+            id="lheading"
+          ></span>
+        </h1>
+
+        <h3 class="font-medium text-xl mb-5">Courses to get you started</h3>
+
+        <h1
+          class="mb-8 text-3xl font-semibold text-gray-700 dark:text-white md:text-5xl lg:text-3xl"
+        >
+          <span
+            id="sheading"
+            class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400"
+          ></span>
+        </h1>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div
+            class="border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <img class="rounded-t-lg" src="Images/AI.jpg" alt="" />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Course 1
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <a
+                onclick="toggleCourse(this.id)"
+                id="btn0"
+                class="cursor-pointer inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                View Course
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="Images/Data Scientiest.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Course 2
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <a
+                onclick="toggleCourse(this.id)"
+                id="btn1"
+                class="cursor-pointer inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                View Course
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <img class="rounded-t-lg" src="Images/Java.jpg" alt="" />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Course 3
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <a
+                onclick="toggleCourse(this.id)"
+                id="btn2"
+                class="cursor-pointer inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                View Course
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="Images/Data Structures.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Course 4
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <a
+                onclick="toggleCourse(this.id)"
+                id="btn3"
+                class="cursor-pointer inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                View Course
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="Images/Human Resource Management.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Course 5
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <a
+                onclick="toggleCourse(this.id)"
+                id="btn4"
+                class="cursor-pointer inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                View Course
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="Images/Finance Management.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Course 6
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <a
+                onclick="toggleCourse(this.id)"
+                id="btn5"
+                class="cursor-pointer inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                View Course
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="Images/Block Chain.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Course 7
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <a
+                onclick="toggleCourse(this.id)"
+                id="btn6"
+                class="cursor-pointer inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                View Course
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="Images/Data Analysis.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Course 8
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <a
+                onclick="toggleCourse(this.id)"
+                id="btn7"
+                class="cursor-pointer inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                View Course
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="Images/Digital Marketing Management.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Course 9
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <a
+                onclick="toggleCourse(this.id)"
+                id="btn8"
+                class="cursor-pointer inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                View Course
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
